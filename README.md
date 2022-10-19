@@ -1,4 +1,4 @@
-# pwr_s3_tp_lab1
+# pwr_s3_tp_lab1 - Number systems converter program
 PWr - 3 Semestr - Technologie Programowania - Laboratorium Lista 1
 
 <br />
