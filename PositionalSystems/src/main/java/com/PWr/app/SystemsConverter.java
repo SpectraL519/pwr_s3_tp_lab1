@@ -6,11 +6,16 @@ package com.PWr.app;
 
 public class SystemsConverter {
     private int p0;
+    private char values[];
 
 
 
     public SystemsConverter () {
         this.p0 = 0;
+
+        this.values = new char[16];
+        for (int i = 0; i < 10; i++)    { this.values[i] = (char)(i + '0'); }
+        for (int i = 0; i < 6; i++)     { this.values[i + 10] = (char)(i + 'A'); }
     }
 
     public void setMainSystem(int base) {
@@ -19,25 +24,46 @@ public class SystemsConverter {
     }
 
 
-        private String convertToDecimal (String number, int base) {
-            int dec_number = 0;
+        private int convertToDecimal (String number) {
+            int decimal = 0;
 
-            for (int i = number.length() - 1; i >= 0; i--) {
-                try {
-                    dec_number += Integer.valueOf(number.charAt(i)) * Math.pow(base, i);
-                } 
-                catch (NumberFormatException exception) { return exception.getMessage(); }
+            try     { decimal = Integer.parseInt(number, this.p0); }
+            catch (Exception e) { 
+                e.printStackTrace();
+                return -1;
+            }
+            
+            return decimal;
+        }
+
+        private String convertToNonDecimal (int decimal, int base) {
+            String new_number = "";
+
+            while (decimal > 0) {
+                int mod = decimal % base;
+                decimal /= base;
+
+                new_number = this.values[mod] + new_number;
             }
 
-            return Integer.toString(dec_number);
+            return new_number;
         }
 
     public String convert (String number, int base) {
         if (this.p0 == 0) { return "Could not add a new system base! First set the main system base"; }
 
-        if (this.p0 != 10)  { number = convertToDecimal(number, base); }
+        int decimal = -1;
+        if (this.p0 != 10)  { decimal = convertToDecimal(number); }
+        else {
+            try { decimal = Integer.valueOf(number); }
+            catch (Exception e) { return e.getMessage(); }
+        }
 
-        if (base != 10) { number = convertToNonDecimal(number, base); }
+        if (decimal == -1) { return "Something went wrong!"; }
+        else {
+            if (base != 10) { number = convertToNonDecimal(decimal, base); }
+            else { return Integer.toString(decimal); }
+        }
 
         return number;
     }
