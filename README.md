@@ -30,12 +30,17 @@ git clone https://github.com/SpectraL519/pwr_s3_tp_lab1.git
 cd PositionalSystems
 ```
 
-5. Build the maven package:
+5. *Optional:* Check the project source code using PMD and Checkstyle:
+```
+mvn site
+```
+
+6. Build the maven package:
 ```
 mvn package
 ```
 
-6. Execute the project code:
+7. Execute the project code:
 ```
 java -cp target/PositionalSystems-1.0-SNAPSHOT.jar com.PWr.app.App
 ```
