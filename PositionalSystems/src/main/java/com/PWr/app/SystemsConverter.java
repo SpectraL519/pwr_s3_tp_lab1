@@ -18,9 +18,13 @@ public class SystemsConverter {
         for (int i = 0; i < 6; i++)     { this.values[i + 10] = (char)(i + 'A'); }
     }
 
-    public void setMainSystem(int base) {
+    public void setMainSystem (int base) {
         if (base > 1 && base < 17)  { this.p0 = base; }
         else    { System.out.println("Could not set the main system base (" + base + ")!\nSystem base must be in range [2, 16]!"); }
+    }
+
+    public int getMainSystem () {
+        return this.p0;
     }
 
 
@@ -50,19 +54,28 @@ public class SystemsConverter {
         }
 
     public String convert (String number, int base) {
-        if (this.p0 == 0) { return "Could not add a new system base! First set the main system base"; }
-
-        int decimal = -1;
-        if (this.p0 != 10)  { decimal = convertToDecimal(number); }
-        else {
-            try { decimal = Integer.valueOf(number); }
-            catch (Exception e) { return e.getMessage(); }
+        if (base > 1 && base < 17) {
+            if (this.p0 == 0) { 
+                System.out.println("Could not convert! First set the main system base");
+                return "Error";
+            }
+    
+            int decimal = -1;
+            if (this.p0 != 10)  { decimal = convertToDecimal(number); }
+            else {
+                try { decimal = Integer.valueOf(number); }
+                catch (Exception e) { return e.getMessage(); }
+            }
+    
+            if (decimal == -1) { return "Error"; }
+            else {
+                if (base != 10) { number = convertToNonDecimal(decimal, base); }
+                else { return Integer.toString(decimal); }
+            }
         }
-
-        if (decimal == -1) { return "Something went wrong!"; }
         else {
-            if (base != 10) { number = convertToNonDecimal(decimal, base); }
-            else { return Integer.toString(decimal); }
+            System.out.println("Could not convert! The given base is not supported (must be in range [2, 16])");
+            return "Error";
         }
 
         return number;
