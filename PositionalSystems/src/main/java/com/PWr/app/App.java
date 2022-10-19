@@ -12,7 +12,12 @@ public class App {
         CommandLine cmd = new CommandLine(converter);
         
         while (true) {
-            cmd.getExecuteCommand();
+            try {
+                cmd.getExecuteCommand();
+            }
+            catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
         }
     }
 }
