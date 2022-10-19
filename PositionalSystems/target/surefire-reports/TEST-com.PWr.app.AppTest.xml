@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.PWr.app.AppTest" time="0.051" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.PWr.app.AppTest" time="0.049" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1250"/>
-    <property name="java.class.path" value="c:\Coding\PWr\S3_TP\pwr_s3_tp_lab1\PositionalSystems\target\test-classes;c:\Coding\PWr\S3_TP\pwr_s3_tp_lab1\PositionalSystems\target\classes;C:\Users\jmusi\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\jmusi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="C:\Coding\PWr\S3_TP\pwr_s3_tp_lab1\PositionalSystems\target\test-classes;C:\Coding\PWr\S3_TP\pwr_s3_tp_lab1\PositionalSystems\target\classes;C:\Users\jmusi\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\jmusi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PL"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\jmusi\AppData\Local\Temp\surefire10934453525686690201\surefirebooter4849675500344538814.jar C:\Users\jmusi\AppData\Local\Temp\surefire10934453525686690201 2022-10-18T22-11-14_901-jvmRun1 surefire1392696685281820439tmp surefire_011409916500912998628tmp"/>
+    <property name="sun.java.command" value="C:\Users\jmusi\AppData\Local\Temp\surefire17863229686469930345\surefirebooter17268261889499741922.jar C:\Users\jmusi\AppData\Local\Temp\surefire17863229686469930345 2022-10-19T11-52-53_711-jvmRun1 surefire12484852770415849542tmp surefire_08576491198099089789tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="c:\Coding\PWr\S3_TP\pwr_s3_tp_lab1\PositionalSystems\target\test-classes;c:\Coding\PWr\S3_TP\pwr_s3_tp_lab1\PositionalSystems\target\classes;C:\Users\jmusi\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\jmusi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Coding\PWr\S3_TP\pwr_s3_tp_lab1\PositionalSystems\target\test-classes;C:\Coding\PWr\S3_TP\pwr_s3_tp_lab1\PositionalSystems\target\classes;C:\Users\jmusi\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\jmusi\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\jmusi"/>
     <property name="user.language" value="pl"/>
@@ -25,12 +25,12 @@
     <property name="java.version.date" value="2022-01-18"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17.0.2"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="c:\Coding\PWr\S3_TP\pwr_s3_tp_lab1\PositionalSystems"/>
+    <property name="basedir" value="C:\Coding\PWr\S3_TP\pwr_s3_tp_lab1\PositionalSystems"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\jmusi\AppData\Local\Temp\surefire10934453525686690201\surefirebooter4849675500344538814.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\jmusi\AppData\Local\Temp\surefire17863229686469930345\surefirebooter17268261889499741922.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.2+8-LTS-86"/>
@@ -44,7 +44,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\jmusi\AppData\Local\Temp\"/>
     <property name="java.version" value="17.0.2"/>
-    <property name="user.dir" value="c:\Coding\PWr\S3_TP\pwr_s3_tp_lab1\PositionalSystems"/>
+    <property name="user.dir" value="C:\Coding\PWr\S3_TP\pwr_s3_tp_lab1\PositionalSystems"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -56,5 +56,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.PWr.app.AppTest" time="0.004"/>
+  <testcase name="shouldAnswerWithTrue" classname="com.PWr.app.AppTest" time="0"/>
 </testsuite>
