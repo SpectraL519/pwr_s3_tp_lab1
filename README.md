@@ -1,6 +1,18 @@
 # pwr_s3_tp_lab1
-PWr - 3 Semestr - Technologie Programowania - Laboratorium Lista 1
+PWr - 3 Semestr - Technologie Programowania (Programming Technologies) - Laboratories list 1
 
+**Language:**
+
+<p>
+  <a href="https://www.java.com" target="_blank" rel="noreferrer"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> 
+  </a>
+  <a href="https://maven.apache.org/" target="_blank" rel="noreferrer"> 
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/maven-original.svg" alt="maven" width="40" height="40"/> 
+  </a>
+</p>
+
+<br />
 <br />
 
 > To run the project you must have [Maven](https://maven.apache.org/) installed.
